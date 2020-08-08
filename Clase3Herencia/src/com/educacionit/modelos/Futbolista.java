@@ -13,19 +13,20 @@ public class Futbolista extends SeleccionFutbol {
 	}
 
 	public Futbolista(int id, String nombre, String apellido, int edad, int dorsal, String demarcacion) {
-		super(id,nombre,apellido,edad );//invocamos al constructor de la clase padre 
+		super(id, nombre, apellido, edad);// invocamos al constructor de la clase padre
 		this.demarcacion = demarcacion;
 		this.dorsal = dorsal;
 	}
 
 	public void jugarPartido() {
-
+		System.out.println("Estoy Jugando un Partido  , Clase Futbolista");
 	}
 
 	public void entrenar() {
-
+		System.out.println("Estoy entrenando , Clase Futbolista");
 	}
 
+	// GEt and SEt
 	public Integer getDorsal() {
 		return dorsal;
 	}
@@ -41,6 +42,5 @@ public class Futbolista extends SeleccionFutbol {
 	public void setDemarcacion(String demarcacion) {
 		this.demarcacion = demarcacion;
 	}
-	
-	
+
 }

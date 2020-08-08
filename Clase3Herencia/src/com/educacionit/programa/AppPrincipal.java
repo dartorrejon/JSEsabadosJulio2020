@@ -1,6 +1,7 @@
 package com.educacionit.programa;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import com.educacionit.clasepadre.SeleccionFutbol;
 import com.educacionit.modelos.Entrenador;
@@ -17,10 +18,11 @@ public class AppPrincipal {
 		Futbolista iniesta = new Futbolista(2, "Andre", "Iniesta", 29, 6, "Interior Derecho");
 		Masajista raulMartinez = new Masajista(3, "raul", "Martinez", 45, "Lic en Fisioterapia ", 20);
 		// agrego los objetos al array
+		integrantes.add(iniesta);
 		integrantes.add(delBosque);
 		integrantes.add(raulMartinez);
-		integrantes.add(iniesta);
 
+//		 UTILIZAMOS TODOS LOS METODOS PROPIOS DE LAS CLASE PADRE
 		// concentracion
 		System.out.println("Todos los integranrtes comienzan una concentracion (todos ejecutan el mismo metodo)");
 		for (SeleccionFutbol aux : integrantes) {
@@ -29,11 +31,35 @@ public class AppPrincipal {
 		}
 
 		// VIAJE
-		System.out.println("nTodos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo método)");
+		System.out.println("Todos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo método)");
 		for (SeleccionFutbol integrante : integrantes) {
 			System.out.print(integrante.getNombre() + " " + integrante.getApellido() + " -> ");
 			integrante.viajar();
 		}
+		System.out.println(" AHORA UTILIZAMOS TODOS LOS METODOS PROPIOS DE LAS CLASES HIJAS");
+		
+		// ENTRENAMIENTO
+		System.out.println(
+				"Entrenamiento de Futbol :Solamente el entrenador y el futbolista tiene metodos para entrenar");
+		System.out.println(delBosque.getNombre() + " " + delBosque.getApellido() + " -> ");
+		delBosque.dirigirEntrenamiento();
+		System.out.println(iniesta.getNombre() + " " + iniesta.getApellido() + " -> ");
+		iniesta.entrenar();
+		
+		// MASAJE
+		System.out.println("MASAJE : Solo el masajista tiene el metodo para dar un masaje");
+		System.out.println(raulMartinez.getNombre() + " " + raulMartinez.getApellido() + " -> ");
+		raulMartinez.darMasaje();
+		
+		//Partido De Futbol
+		System.out.println("Partido de Futbol : Solamente el entrenador y el futbolista tienen metodos para los partidos");
+		System.out.println(delBosque.getNombre() + " " + delBosque.getApellido() + " -> ");
+		delBosque.dirigirPartido();
+		System.out.println(iniesta.getNombre() + " " + iniesta.getApellido() + " -> ");
+		iniesta.jugarPartido();
+		
+		
+		
 	}
 
 }
