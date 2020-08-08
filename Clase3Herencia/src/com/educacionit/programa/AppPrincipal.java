@@ -58,6 +58,14 @@ public class AppPrincipal {
 		System.out.println(iniesta.getNombre() + " " + iniesta.getApellido() + " -> ");
 		iniesta.jugarPartido();
 		
+		System.out.println("Ejecutamos implementacion de metodos abstractos");
+		//PROBAMOS LOS METODOS ABSTRACTOS!
+		delBosque.entrenamiento();
+		iniesta.entrenamiento();
+		raulMartinez.entrenamiento();
+		
+		
+		
 		
 		
 	}

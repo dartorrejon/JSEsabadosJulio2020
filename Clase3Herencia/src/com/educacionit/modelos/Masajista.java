@@ -34,5 +34,11 @@ public class Masajista extends SeleccionFutbol {
 		this.titulacion = titulacion;
 	}
 
+	@Override
+	public void entrenamiento() {
+		System.out.println("MASAJISTA : Estoy sobreescribiendo un metodo abstracto de seleccion futbol");
+		
+	}
+
 	
 }

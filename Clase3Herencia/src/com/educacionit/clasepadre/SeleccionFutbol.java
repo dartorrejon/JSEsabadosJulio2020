@@ -1,7 +1,7 @@
 package com.educacionit.clasepadre;
 
 //Clase padre!
-public class SeleccionFutbol {
+public abstract class SeleccionFutbol {
 
 	protected static Integer id;
 	protected String nombre;
@@ -18,6 +18,8 @@ public class SeleccionFutbol {
 		this.apellido = apellido;
 		this.edad = edad;
 	}
+	//METODO ABSTRACTO  
+	public abstract void entrenamiento();
 
 	public void concentrarce() {
 		System.out.println("Seleccion Futbol, " + "estoy concentrando ");

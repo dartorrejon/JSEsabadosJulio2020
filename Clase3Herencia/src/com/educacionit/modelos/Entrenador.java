@@ -5,6 +5,13 @@ import com.educacionit.clasepadre.SeleccionFutbol;
 //Clase Hija de SeleccionFutbol
 public class Entrenador extends SeleccionFutbol {
 
+	@Override
+	public void entrenamiento() {
+		System.out.println("ENTRENADOR :estoy entrenando e implemento el metodo abstracto");
+		
+	}
+	
+	
 	private String idFederacion;
 
 	public Entrenador(int id, String nombre, String apellido, int edad, String idFederacion) {
@@ -27,5 +34,7 @@ public class Entrenador extends SeleccionFutbol {
 	public void setIdFederacion(String idFederacion) {
 		this.idFederacion = idFederacion;
 	}
+
+
 
 }

@@ -3,7 +3,7 @@ package com.educacionit.modelos;
 import com.educacionit.clasepadre.SeleccionFutbol;
 
 //Clase Hija de SeleccionFutbol
-public class Futbolista extends SeleccionFutbol {
+public  class Futbolista extends SeleccionFutbol {
 
 	private Integer dorsal;
 	private String demarcacion;
@@ -41,6 +41,12 @@ public class Futbolista extends SeleccionFutbol {
 
 	public void setDemarcacion(String demarcacion) {
 		this.demarcacion = demarcacion;
+	}
+
+	@Override
+	public void entrenamiento() {
+		System.out.println("FUTBOLISTA:estoy entrenando e implemento el metodo abstracto");
+		
 	}
 
 }
