@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Contact</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well well-sm">
+				<form action="FormController" class="form-horizontal" method="get">
+					<legend class=" header">Formulario De Contacto</legend>	
+					
+					<div class="form-group">
+						<span class="col-md-1 col-md-offset-2 text-center">
+						<i class="fa fa-user bigicon"></i></span>
+						<div class="col-md-8">
+							<input id="name" name="name" type="text"
+							placeholder="ingrese su nombre aqui" class="form-control" minlength="5" maxlength="40" required>
+						</div>
+					</div>	
+					
+					<div class="form-group">
+						<span class="col-md-1 col-md-offset-2 text-center">
+						<i class="fa fa-user bigicon"></i></span>
+						<div class="col-md-8">
+							<input id="apellido" name="apellido" type="text"
+							placeholder="ingrese su apellido aqui" class="form-control">
+						</div>
+					</div>	
+					
+					<div class="form-group">
+						<span class="col-md-1 col-md-offset-2 text-center">
+						<i class="fa fa-user bigicon"></i></span>
+						<div class="col-md-8">
+							<input id="email" name="email" type="email"
+							placeholder="ingrese su email aqui" class="form-control">
+						</div>
+					</div>	
+					
+					<div class="form-group">
+						<span class="col-md-1 col-md-offset-2 text-center">
+						<i class="fa fa-user bigicon"></i></span>
+						<div class="col-md-8">
+							<input id="phone" name="phone" type="text"
+							placeholder="ingrese su numero de Telefono aqui" class="form-control" minlength="12" required>
+						</div>
+					</div>	
+					
+					<div class="col-md-8">
+						<textarea class="form-control" id="message" name="message" 
+						placeholder="Ingrese su mensaje por favor, Nos pondremos en contacto a la brevedad" rows="7"
+						></textarea>
+					</div>
+				
+					
+					<br><h3>Ingrese su lenguaje preferido </h3>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="lista" id="lista" value="PHP" checked>
+						<label class="form-check-label" >PHP</label>
+					</div>				
+					
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="lista" id="lista" value="JAVA" >
+						<label class="form-check-label" >JAVA</label>
+					</div>
+					
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="lista" id="lista" value=".net" >
+						<label class="form-check-label" >.NET</label>
+					</div>		
+					<!-- aca agrego un boton para enviar el form -->
+						<div class="form-group">
+							<div class="col-md-12 text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Enviar datos al Back End </button>	
+							</div>
+						</div>	
+					</form>					
+				</div>
+			</div>		
+		</div>	
+	</div>	
+</body>
+</html>
