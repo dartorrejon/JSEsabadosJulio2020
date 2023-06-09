@@ -16,7 +16,8 @@ public class AppPrincipal {
 		
 		p1.setEdad(edadIngresada);
 		p1.setNombre(nombreIngresado);
-		
+
+		if(p1.getEdad() >0)
 		JOptionPane.showMessageDialog(null, p1.toString());
 		
 	}
